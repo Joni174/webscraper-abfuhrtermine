@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ViuAx1Sb7XEfn/n7O4T4hr4hI5DcCwkm1PI2t8ncT6WvsCI2r7X6rhnMKmZFdOsMl3UN8Im+cbQh4ganHsOqOQ==",
+  "success": true,
+  "projectFilePath": "/home/jonas/temp/abfuhrtermine/abfuhrtermine.fsproj",
+  "expectedPackageFiles": [
+    "/home/jonas/.nuget/packages/fsharp.core/5.0.0/fsharp.core.5.0.0.nupkg.sha512",
+    "/home/jonas/.nuget/packages/fsharp.data/4.2.2/fsharp.data.4.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
