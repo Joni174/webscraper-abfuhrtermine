@@ -81,6 +81,9 @@ let genMessageText (pickUpDates: list<PickUpDate>) =
       else
           "Keine Abfuhrtermine"
 
+let SIGNAL_USER = "signal_user" // has to be present on the system
+let TARGET_PHONE_NUMBER = "target_user" 
+
 [<EntryPoint>]
 let main argv =
     let webPage = getWebPage
@@ -98,7 +101,7 @@ let main argv =
     printfn "%s" (text)
 
     let startInfo =
-        ProcessStartInfo("signal-cli", $"-u +4366488972705 send -m \"{text}\" +4366488972705")
+        ProcessStartInfo("signal-cli", $"-u {SIGNAL_USER} send -m \"{text}\" {TARGET_PHONE_NUMBER}")
 
     startInfo.RedirectStandardOutput <- true
     startInfo.RedirectStandardError <- true
